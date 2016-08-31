@@ -1,0 +1,24 @@
+﻿Build started 8/29/2016 2:31:32 PM.
+     1>Project "E:\Documents\Visual Studio 2013\OOP_Project\OOP_Project\OOP_Project.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\Documents\Visual Studio 2013\OOP_Project\Compile" /I"E:\Documents\Visual Studio 2013\OOP_Project\Machine" /I"E:\Documents\Visual Studio 2013\OOP_Project\Memory" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documents\Visual Studio 2013\OOP_Project\Debug\OOP_Project.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\Documents\Visual Studio 2013\OOP_Project\SimulationEngine" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documents\Visual Studio 2013\OOP_Project\Debug\OOP_Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Documents\Visual Studio 2013\OOP_Project\Debug\OOP_Project.lib" /MACHINE:X86 Debug\main.obj
+         "E:\Documents\Visual Studio 2013\OOP_Project\Debug\Compile.lib"
+         "E:\Documents\Visual Studio 2013\OOP_Project\Debug\Memory.lib"
+         "E:\Documents\Visual Studio 2013\OOP_Project\Debug\Machine.lib"
+     1>Compile.lib(Compiler.obj) : error LNK2019: unresolved external symbol "protected: __thiscall Compiler::Compiler(void)" (??0Compiler@@IAE@XZ) referenced in function "public: static class Compiler * __cdecl Compiler::instance(void)" (?instance@Compiler@@SAPAV1@XZ)
+     1>Machine.lib(Machine.obj) : error LNK2019: unresolved external symbol "protected: __thiscall Machine::Machine(void)" (??0Machine@@IAE@XZ) referenced in function "public: static class Machine * __cdecl Machine::instance(void)" (?instance@Machine@@SAPAV1@XZ)
+     1>Machine.lib(Operations.obj) : error LNK2001: unresolved external symbol "public: virtual void __thiscall Operation::execute(void)" (?execute@Operation@@UAEXXZ)
+     1>Machine.lib(Constant.obj) : error LNK2001: unresolved external symbol "public: virtual void __thiscall Operand::setVarValue(double)" (?setVarValue@Operand@@UAEXN@Z)
+     1>Machine.lib(Variable.obj) : error LNK2019: unresolved external symbol "public: virtual void __thiscall Operand::setVarValue(double)" (?setVarValue@Operand@@UAEXN@Z) referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::erase(unsigned int,unsigned int)" (?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z)
+     1>Machine.lib(Output.obj) : error LNK2001: unresolved external symbol "public: virtual void __thiscall Operand::setVarValue(double)" (?setVarValue@Operand@@UAEXN@Z)
+     1>Memory.lib(Memory.obj) : error LNK2019: unresolved external symbol "protected: __thiscall Memory::Memory(void)" (??0Memory@@IAE@XZ) referenced in function "public: static class Memory * __cdecl Memory::instance(void)" (?instance@Memory@@SAPAV1@XZ)
+     1>E:\Documents\Visual Studio 2013\OOP_Project\Debug\OOP_Project.exe : fatal error LNK1120: 5 unresolved externals
+     1>Done Building Project "E:\Documents\Visual Studio 2013\OOP_Project\OOP_Project\OOP_Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.61
